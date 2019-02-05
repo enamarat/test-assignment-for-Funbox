@@ -1,0 +1,79 @@
+/* Разметка страницы */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;;
+  background-color: #14AFE3;
+  border-radius: 10%;
+  box-shadow:3px 3px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+#panel {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 30%;
+}
+
+#map {
+  border: 5px solid orange;
+  width: 65%;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25% 25% 10% 10%;
+  box-shadow:3px 3px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Стили элементов */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0C58FA;
+  font-family: Helvetica, serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F7F7F7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  /*color: #F7F7F7;*/
+}
+
+#route-point {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#pointList li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#pointList li:active,
+.delete:active {
+  font-weight: bold;
+  color: #FF0303;
+}
+
+.delete,
+#add {
+  background-color: #0C58FA;
+  border: 2px solid black;
+  border-radius: 30%;
+  font-size: 1rem;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Генератор маршрутов </title>
+      <link href="./reset.css" type="text/css" rel="stylesheet">
+      <link href="./styles.css" type="text/css" rel="stylesheet">
+      <script src="./sortable.js"></script>
+  </head>
+  <body>
+    <h1> Генератор маршрутов </h1>
+    <div class="container">
+      <div id="panel">
+        <label for"route-point"> Новая точка маршрута </label>
+        <input type="text" id="route-point" name="rote-point" placeholder="Введите адрес"/>
+        <button id="add"> Добавить точку маршрута </button>
+        <ul id="pointList">
+        </ul>
+      </div>
+      <div id="map">
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=57dd19bf-73d4-44b1-9773-d01dc4b0e0d9&lang=ru_RU" type="text/javascript"> </script>
+    <script src="./yandexAPI.js"> </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
